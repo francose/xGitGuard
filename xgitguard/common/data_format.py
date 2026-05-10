@@ -144,7 +144,7 @@ def keys_extractor(code_content):
         "Slack Token": "(xox[pbaor]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
         "AWS": "(?:.*awsSecretKey|.*aws_secret|.*api-key|.*aws_account_secret).*"
         "(?=.*[A-Z])(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])",
-        "Slack Webhook": "T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
+        "Slack Webhook": r"T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
     }
 
     keys = []
