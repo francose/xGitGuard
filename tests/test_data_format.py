@@ -6,12 +6,6 @@ stripping helpers. Not exhaustive — just enough to catch regressions and
 prove the detection pipeline works end to end.
 """
 
-import pytest
-import sys
-import os
-
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
 from xgitguard.common.data_format import (
     keys_extractor,
     credential_extractor,
